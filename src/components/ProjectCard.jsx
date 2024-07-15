@@ -34,7 +34,7 @@ const ProjectCard = ({ className, description, image, name, gitHub, live }) => {
   }
   return (
     <div
-      className={`flex justify-between items-center mt-20 max-sm:flex-col ${
+      className={`flex justify-between items-center mt-10 max-sm:flex-col ${
         className ? className : ''
       }`}
     >
@@ -61,12 +61,12 @@ const ProjectCard = ({ className, description, image, name, gitHub, live }) => {
         </div>
       </div>
       <motion.div
-        className="w-[45%] max-sm:w-[90%] mt-3 bg-black"
+        className="w-[45%] max-sm:w-[90%] mt-3 bg-black p-3 rounded-lg border border-slate-50"
         style={{rotateY,rotateX, transformStyle: 'preserve-3d'}}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={image} alt="project-thumbnail "  style={{transform:'translateZ(25px)',transformStyle:'preserve-3d'}} className='object-contain'/>
+        <img src={image} alt="project-thumbnail "  style={{transform:'translateZ(10px)',transformStyle:'preserve-3d'}} className='object-contain'/>
       </motion.div>
     </div>
   );
